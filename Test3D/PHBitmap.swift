@@ -95,4 +95,11 @@ class PHBitmap {
 		                       intent: .defaultIntent)
 		return Image(cgImage: cgi!, size: NSSize(width: self.width, height: self.height))
 	}
+	
+	public func copy(_ other: PHBitmap) {
+		assert(self.width == other.width && self.height == other.height)
+		for i in 0..<size {
+			data[i] = other.data[i]
+		}
+	}
 }

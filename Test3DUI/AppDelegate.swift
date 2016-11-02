@@ -13,13 +13,13 @@ import SnapKit
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBOutlet weak var window: NSWindow!
-	var imageViewController: ImageViewController?
+	var contextViewController: ContextViewController?
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		imageViewController = ImageViewController()
-		window.contentView?.addSubview(self.imageViewController!.view)
+		contextViewController = ContextViewController()
+		window.contentView?.addSubview(self.contextViewController!.view)
 		
-		imageViewController?.view.snp.makeConstraints {(make) in
+		contextViewController?.view.snp.makeConstraints {(make) in
 			make.edges.equalTo(window.contentView!)
 		}
 		

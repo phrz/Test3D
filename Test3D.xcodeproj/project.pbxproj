@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		271FCC131DC98BFE0011704D /* TransformMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FCC121DC98BFE0011704D /* TransformMatrix.swift */; };
+		273F2B4C1DCA7C3A00F91B8E /* ContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F2B4B1DCA7C3A00F91B8E /* ContextView.swift */; };
+		273F2B4D1DCA7CCD00F91B8E /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FF81DCA6E140082FEAA /* Context.swift */; };
+		273F2B4E1DCA7CD100F91B8E /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FF41DCA6BAB0082FEAA /* Mesh.swift */; };
+		273F2B4F1DCA7CD100F91B8E /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FF61DCA6BCF0082FEAA /* Camera.swift */; };
 		27569FD11DCA41580082FEAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FD01DCA41580082FEAA /* AppDelegate.swift */; };
 		27569FD31DCA41580082FEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27569FD21DCA41580082FEAA /* Assets.xcassets */; };
 		27569FD61DCA41580082FEAA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27569FD41DCA41580082FEAA /* MainMenu.xib */; };
 		27569FDC1DCA41EA0082FEAA /* PHBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */; };
-		27569FE21DCA47010082FEAA /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FE11DCA47010082FEAA /* ImageViewController.swift */; };
+		27569FE21DCA47010082FEAA /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FE11DCA47010082FEAA /* ContextViewController.swift */; };
 		27569FE31DCA47D30082FEAA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D432F1DC8E63600B82E15 /* Point.swift */; };
 		27569FE41DCA47D30082FEAA /* PHBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */; };
 		27569FE51DCA47D30082FEAA /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0161DC94D5A0038A6E2 /* Matrix.swift */; };
@@ -53,13 +57,14 @@
 
 /* Begin PBXFileReference section */
 		271FCC121DC98BFE0011704D /* TransformMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformMatrix.swift; sourceTree = "<group>"; };
+		273F2B4B1DCA7C3A00F91B8E /* ContextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextView.swift; sourceTree = "<group>"; };
 		27569FCE1DCA41580082FEAA /* Test3DUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test3DUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27569FD01DCA41580082FEAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27569FD21DCA41580082FEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27569FD51DCA41580082FEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		27569FD71DCA41580082FEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBitmap.swift; sourceTree = "<group>"; };
-		27569FE11DCA47010082FEAA /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		27569FE11DCA47010082FEAA /* ContextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
 		27569FE81DCA664F0082FEAA /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		27569FEE1DCA68680082FEAA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
 		27569FF41DCA6BAB0082FEAA /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
@@ -93,7 +98,8 @@
 		27569FCF1DCA41580082FEAA /* Test3DUI */ = {
 			isa = PBXGroup;
 			children = (
-				27569FE11DCA47010082FEAA /* ImageViewController.swift */,
+				27569FE11DCA47010082FEAA /* ContextViewController.swift */,
+				273F2B4B1DCA7C3A00F91B8E /* ContextView.swift */,
 				27569FD01DCA41580082FEAA /* AppDelegate.swift */,
 				27569FD21DCA41580082FEAA /* Assets.xcassets */,
 				27569FD41DCA41580082FEAA /* MainMenu.xib */,
@@ -242,12 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273F2B4E1DCA7CD100F91B8E /* Mesh.swift in Sources */,
+				273F2B4F1DCA7CD100F91B8E /* Camera.swift in Sources */,
+				273F2B4D1DCA7CCD00F91B8E /* Context.swift in Sources */,
 				27569FE31DCA47D30082FEAA /* Point.swift in Sources */,
 				27569FE41DCA47D30082FEAA /* PHBitmap.swift in Sources */,
 				27569FE51DCA47D30082FEAA /* Matrix.swift in Sources */,
 				27569FE61DCA47D30082FEAA /* TransformMatrix.swift in Sources */,
+				273F2B4C1DCA7C3A00F91B8E /* ContextView.swift in Sources */,
 				27569FE71DCA47D30082FEAA /* Parallel.swift in Sources */,
-				27569FE21DCA47010082FEAA /* ImageViewController.swift in Sources */,
+				27569FE21DCA47010082FEAA /* ContextViewController.swift in Sources */,
 				27569FD11DCA41580082FEAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +445,7 @@
 				27569FDA1DCA41580082FEAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277D43201DC8E61000B82E15 /* Build configuration list for PBXProject "Test3D" */ = {
 			isa = XCConfigurationList;
