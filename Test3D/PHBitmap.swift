@@ -55,6 +55,10 @@ class PHBitmap {
 		self.data = [Pixel](repeating: Pixel(r:0,g:0,b:0,a:255), count: Int(width) * Int(height))
 	}
 	
+	public func clear(color: Pixel) {
+		data = data.map { _ in color }
+	}
+	
 	public func set(pixel: Pixel, at index: Int) {
 		assert(index >= 0 && index < size)
 		assert(pixel.r <= 255 && pixel.g <= 255 && pixel.b <= 255 && pixel.a <= 255)

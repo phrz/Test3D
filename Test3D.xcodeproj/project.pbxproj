@@ -21,6 +21,9 @@
 		27569FE91DCA664F0082FEAA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 27569FE81DCA664F0082FEAA /* Cartfile */; };
 		27569FEF1DCA68680082FEAA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27569FEE1DCA68680082FEAA /* SnapKit.framework */; };
 		27569FF11DCA68B40082FEAA /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27569FEE1DCA68680082FEAA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27569FF51DCA6BAB0082FEAA /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FF41DCA6BAB0082FEAA /* Mesh.swift */; };
+		27569FF71DCA6BCF0082FEAA /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FF61DCA6BCF0082FEAA /* Camera.swift */; };
+		27569FF91DCA6E140082FEAA /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FF81DCA6E140082FEAA /* Context.swift */; };
 		277D43301DC8E63600B82E15 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D432F1DC8E63600B82E15 /* Point.swift */; };
 		27AFB0171DC94D5A0038A6E2 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0161DC94D5A0038A6E2 /* Matrix.swift */; };
 		27AFB0191DC9502F0038A6E2 /* Parallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0181DC9502F0038A6E2 /* Parallel.swift */; };
@@ -59,6 +62,9 @@
 		27569FE11DCA47010082FEAA /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		27569FE81DCA664F0082FEAA /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		27569FEE1DCA68680082FEAA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
+		27569FF41DCA6BAB0082FEAA /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		27569FF61DCA6BCF0082FEAA /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		27569FF81DCA6E140082FEAA /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		277D43251DC8E61100B82E15 /* Test3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test3D; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D432F1DC8E63600B82E15 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		27AFB0161DC94D5A0038A6E2 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				277D432F1DC8E63600B82E15 /* Point.swift */,
+				27569FF41DCA6BAB0082FEAA /* Mesh.swift */,
+				27569FF81DCA6E140082FEAA /* Context.swift */,
+				27569FF61DCA6BCF0082FEAA /* Camera.swift */,
 				27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */,
 				27AFB0161DC94D5A0038A6E2 /* Matrix.swift */,
 				271FCC121DC98BFE0011704D /* TransformMatrix.swift */,
@@ -247,10 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27569FF51DCA6BAB0082FEAA /* Mesh.swift in Sources */,
 				271FCC131DC98BFE0011704D /* TransformMatrix.swift in Sources */,
 				27AFB0191DC9502F0038A6E2 /* Parallel.swift in Sources */,
 				277D43301DC8E63600B82E15 /* Point.swift in Sources */,
 				27AFB0171DC94D5A0038A6E2 /* Matrix.swift in Sources */,
+				27569FF91DCA6E140082FEAA /* Context.swift in Sources */,
+				27569FF71DCA6BCF0082FEAA /* Camera.swift in Sources */,
 				27569FDC1DCA41EA0082FEAA /* PHBitmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
