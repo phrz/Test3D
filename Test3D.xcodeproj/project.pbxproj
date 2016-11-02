@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271FCC131DC98BFE0011704D /* TransformMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FCC121DC98BFE0011704D /* TransformMatrix.swift */; };
 		277D43291DC8E61100B82E15 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D43281DC8E61100B82E15 /* main.swift */; };
 		277D43301DC8E63600B82E15 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D432F1DC8E63600B82E15 /* Point.swift */; };
 		27AFB0171DC94D5A0038A6E2 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0161DC94D5A0038A6E2 /* Matrix.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		271FCC121DC98BFE0011704D /* TransformMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformMatrix.swift; sourceTree = "<group>"; };
 		277D43251DC8E61100B82E15 /* Test3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test3D; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D43281DC8E61100B82E15 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		277D432F1DC8E63600B82E15 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				277D43281DC8E61100B82E15 /* main.swift */,
 				277D432F1DC8E63600B82E15 /* Point.swift */,
 				27AFB0161DC94D5A0038A6E2 /* Matrix.swift */,
+				271FCC121DC98BFE0011704D /* TransformMatrix.swift */,
 				27AFB0181DC9502F0038A6E2 /* Parallel.swift */,
 			);
 			path = Test3D;
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271FCC131DC98BFE0011704D /* TransformMatrix.swift in Sources */,
 				27AFB0191DC9502F0038A6E2 /* Parallel.swift in Sources */,
 				277D43301DC8E63600B82E15 /* Point.swift in Sources */,
 				277D43291DC8E61100B82E15 /* main.swift in Sources */,

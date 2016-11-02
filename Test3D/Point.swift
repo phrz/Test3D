@@ -28,6 +28,12 @@ struct Point {
 	func vec4() -> Vec4 {
 		return (self.x, self.y, self.z, 1.0)
 	}
+	mutating func apply(_ transform: TransformMatrix) {
+		let newV = transform * self
+		self.x = newV.x
+		self.y = newV.y
+		self.z = newV.z
+	}
 }
 
 extension Point {

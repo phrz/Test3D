@@ -108,30 +108,6 @@ class Matrix {
 	}
 }
 
-class TransformMatrix: Matrix {
-	
-	var translation: Point {
-		//[[1,0,0,X]
-		// [0,1,0,Y]
-		// [0,0,1,Z]
-		// [0,0,0,1]]
-		// X, Y, Z are translation amounts
-		get {
-			return Point(self[0,3],self[1,3],self[2,3])
-		}
-		set(p) {
-			self[0,3] = p.x
-			self[1,3] = p.y
-			self[2,3] = p.z
-		}
-	}
-	
-	override init() {
-		super.init()
-		self.from(matrix: Matrix.makeIdentity(size: 4))
-	}
-}
-
 extension Matrix: Equatable {
 	static func ==(left: Matrix, right: Matrix) -> Bool {
 		return left.content == right.content
@@ -169,7 +145,6 @@ func product(matrix left: Matrix, vector right: [Double]) -> [Double] {
 		// iterate addends of ith cell [j 0...n-1](a_i,j * x_j)
 		for j in 0..<n {
 			result[i] += (left[i,j] * right[j])
-			print("b_\(i) += \(left[i,j]) * \(right[j])")
 		}
 	}
 	return result
@@ -179,8 +154,4 @@ func product(matrix left: Matrix, vector right: Vec4) -> Vec4 {
 	let x = [right.0, right.1, right.2, right.3]
 	let result = product(matrix: left, vector: x)
 	return (result[0], result[1], result[2], result[3])
-}
-
-func *(left: TransformMatrix, right: Point) -> Point {
-	return Point(product(matrix: left, vector: right.vec4()))
 }
