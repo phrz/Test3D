@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		271FCC131DC98BFE0011704D /* TransformMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FCC121DC98BFE0011704D /* TransformMatrix.swift */; };
-		277D43291DC8E61100B82E15 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D43281DC8E61100B82E15 /* main.swift */; };
+		27569FD11DCA41580082FEAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FD01DCA41580082FEAA /* AppDelegate.swift */; };
+		27569FD31DCA41580082FEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27569FD21DCA41580082FEAA /* Assets.xcassets */; };
+		27569FD61DCA41580082FEAA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27569FD41DCA41580082FEAA /* MainMenu.xib */; };
+		27569FDC1DCA41EA0082FEAA /* PHBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */; };
+		27569FE21DCA47010082FEAA /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FE11DCA47010082FEAA /* ImageViewController.swift */; };
+		27569FE31DCA47D30082FEAA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D432F1DC8E63600B82E15 /* Point.swift */; };
+		27569FE41DCA47D30082FEAA /* PHBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */; };
+		27569FE51DCA47D30082FEAA /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0161DC94D5A0038A6E2 /* Matrix.swift */; };
+		27569FE61DCA47D30082FEAA /* TransformMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FCC121DC98BFE0011704D /* TransformMatrix.swift */; };
+		27569FE71DCA47D30082FEAA /* Parallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0181DC9502F0038A6E2 /* Parallel.swift */; };
+		27569FE91DCA664F0082FEAA /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 27569FE81DCA664F0082FEAA /* Cartfile */; };
+		27569FEF1DCA68680082FEAA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27569FEE1DCA68680082FEAA /* SnapKit.framework */; };
+		27569FF11DCA68B40082FEAA /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27569FEE1DCA68680082FEAA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		277D43301DC8E63600B82E15 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D432F1DC8E63600B82E15 /* Point.swift */; };
 		27AFB0171DC94D5A0038A6E2 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0161DC94D5A0038A6E2 /* Matrix.swift */; };
 		27AFB0191DC9502F0038A6E2 /* Parallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFB0181DC9502F0038A6E2 /* Parallel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		27569FF01DCA689B0082FEAA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27569FF11DCA68B40082FEAA /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277D43231DC8E61000B82E15 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -28,14 +50,30 @@
 
 /* Begin PBXFileReference section */
 		271FCC121DC98BFE0011704D /* TransformMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformMatrix.swift; sourceTree = "<group>"; };
+		27569FCE1DCA41580082FEAA /* Test3DUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test3DUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27569FD01DCA41580082FEAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27569FD21DCA41580082FEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27569FD51DCA41580082FEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27569FD71DCA41580082FEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHBitmap.swift; sourceTree = "<group>"; };
+		27569FE11DCA47010082FEAA /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		27569FE81DCA664F0082FEAA /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		27569FEE1DCA68680082FEAA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
 		277D43251DC8E61100B82E15 /* Test3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test3D; sourceTree = BUILT_PRODUCTS_DIR; };
-		277D43281DC8E61100B82E15 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		277D432F1DC8E63600B82E15 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		27AFB0161DC94D5A0038A6E2 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		27AFB0181DC9502F0038A6E2 /* Parallel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parallel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27569FCB1DCA41580082FEAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27569FEF1DCA68680082FEAA /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277D43221DC8E61000B82E15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,11 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27569FCF1DCA41580082FEAA /* Test3DUI */ = {
+			isa = PBXGroup;
+			children = (
+				27569FE11DCA47010082FEAA /* ImageViewController.swift */,
+				27569FD01DCA41580082FEAA /* AppDelegate.swift */,
+				27569FD21DCA41580082FEAA /* Assets.xcassets */,
+				27569FD41DCA41580082FEAA /* MainMenu.xib */,
+				27569FD71DCA41580082FEAA /* Info.plist */,
+			);
+			path = Test3DUI;
+			sourceTree = "<group>";
+		};
+		27569FEA1DCA66F10082FEAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27569FEE1DCA68680082FEAA /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		277D431C1DC8E61000B82E15 = {
 			isa = PBXGroup;
 			children = (
+				27569FE81DCA664F0082FEAA /* Cartfile */,
 				277D43271DC8E61100B82E15 /* Test3D */,
+				27569FCF1DCA41580082FEAA /* Test3DUI */,
 				277D43261DC8E61100B82E15 /* Products */,
+				27569FEA1DCA66F10082FEAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				277D43251DC8E61100B82E15 /* Test3D */,
+				27569FCE1DCA41580082FEAA /* Test3DUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,8 +127,8 @@
 		277D43271DC8E61100B82E15 /* Test3D */ = {
 			isa = PBXGroup;
 			children = (
-				277D43281DC8E61100B82E15 /* main.swift */,
 				277D432F1DC8E63600B82E15 /* Point.swift */,
+				27569FDB1DCA41EA0082FEAA /* PHBitmap.swift */,
 				27AFB0161DC94D5A0038A6E2 /* Matrix.swift */,
 				271FCC121DC98BFE0011704D /* TransformMatrix.swift */,
 				27AFB0181DC9502F0038A6E2 /* Parallel.swift */,
@@ -77,6 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		27569FCD1DCA41580082FEAA /* Test3DUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27569FD81DCA41580082FEAA /* Build configuration list for PBXNativeTarget "Test3DUI" */;
+			buildPhases = (
+				27569FCA1DCA41580082FEAA /* Sources */,
+				27569FF01DCA689B0082FEAA /* CopyFiles */,
+				27569FCB1DCA41580082FEAA /* Frameworks */,
+				27569FCC1DCA41580082FEAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test3DUI;
+			productName = Test3DUI;
+			productReference = 27569FCE1DCA41580082FEAA /* Test3DUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 		277D43241DC8E61000B82E15 /* Test3D */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277D432C1DC8E61100B82E15 /* Build configuration list for PBXNativeTarget "Test3D" */;
@@ -104,6 +184,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Paul Herz";
 				TargetAttributes = {
+					27569FCD1DCA41580082FEAA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = M8MME6Q9DA;
+						ProvisioningStyle = Automatic;
+					};
 					277D43241DC8E61000B82E15 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = M8MME6Q9DA;
@@ -117,6 +202,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 277D431C1DC8E61000B82E15;
 			productRefGroup = 277D43261DC8E61100B82E15 /* Products */;
@@ -124,11 +210,39 @@
 			projectRoot = "";
 			targets = (
 				277D43241DC8E61000B82E15 /* Test3D */,
+				27569FCD1DCA41580082FEAA /* Test3DUI */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		27569FCC1DCA41580082FEAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27569FE91DCA664F0082FEAA /* Cartfile in Resources */,
+				27569FD31DCA41580082FEAA /* Assets.xcassets in Resources */,
+				27569FD61DCA41580082FEAA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		27569FCA1DCA41580082FEAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27569FE31DCA47D30082FEAA /* Point.swift in Sources */,
+				27569FE41DCA47D30082FEAA /* PHBitmap.swift in Sources */,
+				27569FE51DCA47D30082FEAA /* Matrix.swift in Sources */,
+				27569FE61DCA47D30082FEAA /* TransformMatrix.swift in Sources */,
+				27569FE71DCA47D30082FEAA /* Parallel.swift in Sources */,
+				27569FE21DCA47010082FEAA /* ImageViewController.swift in Sources */,
+				27569FD11DCA41580082FEAA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277D43211DC8E61000B82E15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,14 +250,63 @@
 				271FCC131DC98BFE0011704D /* TransformMatrix.swift in Sources */,
 				27AFB0191DC9502F0038A6E2 /* Parallel.swift in Sources */,
 				277D43301DC8E63600B82E15 /* Point.swift in Sources */,
-				277D43291DC8E61100B82E15 /* main.swift in Sources */,
 				27AFB0171DC94D5A0038A6E2 /* Matrix.swift in Sources */,
+				27569FDC1DCA41EA0082FEAA /* PHBitmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		27569FD41DCA41580082FEAA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27569FD51DCA41580082FEAA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		27569FD91DCA41580082FEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M8MME6Q9DA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Test3DUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulherz.Test3DUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		27569FDA1DCA41580082FEAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M8MME6Q9DA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Test3DUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulherz.Test3DUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		277D432A1DC8E61100B82E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -253,6 +416,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27569FD81DCA41580082FEAA /* Build configuration list for PBXNativeTarget "Test3DUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27569FD91DCA41580082FEAA /* Debug */,
+				27569FDA1DCA41580082FEAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		277D43201DC8E61000B82E15 /* Build configuration list for PBXProject "Test3D" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
