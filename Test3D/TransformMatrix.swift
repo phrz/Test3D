@@ -31,7 +31,7 @@ class TransformMatrix: Matrix {
 		return t
 	}
 	
-	static func rotateX(alpha: Double) -> TransformMatrix {
+	static func rotateZ(alpha: Double) -> TransformMatrix {
 		// [CITE] http://inside.mines.edu/fs_home/gmurray/ArbitraryAxisRotation/
 		
 		let t = TransformMatrix()
@@ -77,7 +77,7 @@ class TransformMatrix: Matrix {
 		return t
 	}
 	
-	static func rotateZ(gamma: Double) -> TransformMatrix {
+	static func rotateX(gamma: Double) -> TransformMatrix {
 		// [CITE] http://inside.mines.edu/fs_home/gmurray/ArbitraryAxisRotation/
 		
 		let t = TransformMatrix()
@@ -98,6 +98,27 @@ class TransformMatrix: Matrix {
 		t[1,1] = cos_gamma
 		
 		return t
+	}
+}
+
+extension TransformMatrix {
+	static func *(left: TransformMatrix, right: TransformMatrix) -> TransformMatrix {
+		assert(left.columns == right.rows)
+		let result = TransformMatrix()
+		
+		for k in 0..<right.columns {
+			for j in 0..<left.columns {
+				for i in 0..<left.rows {
+					result[i,k] += left[i,j] * right[j,k]
+				}
+			}
+		}
+		
+		return result
+	}
+	
+	static func *=(left: inout TransformMatrix, right: TransformMatrix) {
+		left = left * right
 	}
 }
 

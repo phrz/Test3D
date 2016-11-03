@@ -18,25 +18,34 @@ class ContextViewController {
 		view = ContextView(context: context)
 		view.frame = NSRect(x: 0, y: 0, width: 600, height: 400)
 		
-		let timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
-			for _ in 0...100 {
-				self.randomDot()
-			}
+		// Setup:
+		let π = 3.1415926535
+		var myCube = Mesh.cube
+		myCube.position = Point(0,0,5)
+		myCube.rotation = Point(0,π/4,0)
+		
+		let myCamera = Camera(position: Point(0,0,0), target: Point(0,0,1))
+		let meshes: [Mesh] = [myCube]
+		
+		// Step 1: Clear screen
+		self.context.clear()
+		
+		// Step 2: Update world
+		// do nothing
+		
+		// Step 3: Render into back buffer
+		self.context.render(camera: myCamera, meshes: meshes)
+		
+		// Step 4: Copy to front buffer
+		self.context.flush()
+		
+		/*let timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+			// do something
 			self.context.flush()
 			self.context.clear()
 		}
-		timer.fire()
+		timer.fire()*/
 	}
 	
-	func random(_ r: ClosedRange<Int>) -> Int {
-		let span = abs(r.upperBound-r.lowerBound)
-		return Int(arc4random_uniform(UInt32(span)))+r.lowerBound
-	}
 	
-	func randomDot() {
-		let w = context.width
-		let h = context.height
-		let red = Pixel(r: 255, g: 0, b: 0)
-		context.put(pixel: red, x: random(0...w), y: random(0...h))
-	}
 }

@@ -34,6 +34,26 @@ struct Point {
 		self.y = newV.y
 		self.z = newV.z
 	}
+	func magnitude() -> Double {
+		return sqrt(x*x + y*y + z*z)
+	}
+}
+
+func normalize(_ p: Point) -> Point {
+	let mag = p.magnitude()
+	return Point(p.x/mag, p.y/mag, p.z/mag)
+}
+
+func cross(_ a: Point, _ b: Point) -> Point {
+	var result = Point.zero
+	result.x = a.y * b.z - a.z * b.y
+	result.y = a.z * b.x - a.x * b.z
+	result.z = a.x * b.y - a.y * b.x
+	return result
+}
+
+func dot(_ a: Point, _ b: Point) -> Double {
+	return a.x*b.x + a.y*b.y + a.z*b.z
 }
 
 extension Point {
@@ -42,6 +62,14 @@ extension Point {
 		result.x += right.x
 		result.y += right.y
 		result.z += right.z
+		return result
+	}
+	
+	static func -(left: Point, right: Point) -> Point {
+		var result = left
+		result.x -= right.x
+		result.y -= right.y
+		result.z -= right.z
 		return result
 	}
 	

@@ -42,6 +42,8 @@ class Matrix {
 	}
 	
 	func from(array contentArray: [[Double]]) {
+		self.content = []
+		
 		// take a row-major (human readable) 2D array
 		let r = contentArray.count
 		
@@ -53,6 +55,7 @@ class Matrix {
 		for row in contentArray {
 			// if this row is the wrong size, stuff goes bad.
 			guard row.count == c else {
+				print("Size mismatch in Matrix::from")
 				self.content = []
 				return
 			}
@@ -105,6 +108,27 @@ class Matrix {
 	
 	func linearIndex(_ r: Int, _ c: Int) -> Int {
 		return r * self.columns + c
+	}
+}
+
+extension Matrix {
+	static func *(left: Matrix, right: Matrix) -> Matrix {
+		assert(left.columns == right.rows)
+		let result = Matrix(left.rows, right.columns)
+		
+		for k in 0..<right.columns {
+			for j in 0..<left.columns {
+				for i in 0..<left.rows {
+					result[i,k] += left[i,j] * right[j,k]
+				}
+			}
+		}
+		
+		return result
+	}
+	
+	static func *=(left: inout Matrix, right: Matrix) {
+		left = left * right
 	}
 }
 
